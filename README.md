@@ -100,6 +100,16 @@ dotnet publish --configuration Release `
 bin\\Release\\net8.0-windows\\win-x64\\publish\\
 ```
 
+## 项目结构
+
+```text
+Models/       启动项和配置数据模型
+Views/        WPF 界面
+ViewModels/   界面状态和命令
+Services/     配置保存、文件选择、程序启动、提示框
+Helpers/      MVVM 通用辅助类
+```
+
 ## GitHub Actions 发布
 
 `.github/workflows/build-release.yml` 会：
